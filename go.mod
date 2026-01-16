@@ -1,4 +1,4 @@
-module github.com/omniboost/laravel_encrypt
+module github.com/omniboost/laravel-encrypt
 
 go 1.25.6
 
