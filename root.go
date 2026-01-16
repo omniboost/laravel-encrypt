@@ -52,6 +52,11 @@ Reads data from stdin`,
 		var output string
 		if decryptMode {
 			output, err = decryptString(data)
+			if data == output {
+				println("Error: Failed to decrypt data, input is not in correct format")
+				os.Exit(1)
+			}
+
 		} else {
 			output, err = encryptString(data)
 		}
